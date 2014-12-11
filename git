@@ -1,0 +1,39 @@
+git config --global user.name "Brian Crafton"
+git config --global user.email "craftonbrian@gmail.com"
+git init
+git remote add origin https://github.com/craftonb/rails-girls.git
+^ for the first time, only need to do this once for each hidden git folder 
+git add .
+git commit -m 'first commit'
+git push origin master
+
+
+okay so origin is the branch
+
+and pushing from different branches means u gotta update:
+brian@brian-HP-EliteBook-840-G1:~/Desktop/project$ git commit -m 'another commit'
+On branch master
+Your branch is ahead of 'a/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+brian@brian-HP-EliteBook-840-G1:~/Desktop/project$ 
+
+
+after the intial commit u can keep adding stuff by doing:
+git status is realy cool!
+
+git add .
+
+git commit -m "type your commit message here"
+
+git push origin master
+____________________________________________________________________
+
+
+touch README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/craftonb/d.git
+git push -u origin master
