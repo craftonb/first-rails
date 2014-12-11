@@ -1,0 +1,18 @@
+<%= @page.title %>
+<%= @page.user_id %>
+<%= @page.user.email %>
+<%= image_tag @page.image.url(:medium) %>
+
+<% @comments = @page.comments %>
+
+<% if @comments.blank? %>
+	<h3>No comments just yet, would you like to add the first!</h3>
+<% else %>
+	<% @comments.each do |comment| %>
+		<div class="comments">
+			<p><%= comment.text %></p>
+		</div>
+	<% end %>
+<% end %>
+
+<%= link_to "add new comment", new_page_comment_path(@page) %>
