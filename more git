@@ -1,0 +1,19 @@
+git config --global user.name "Brian Crafton"
+git config --global user.email "craftonbrian@gmail.com"
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/craftonb/first-rails.git
+git push -u origin master
+
+
+
+origin is interchangeabele with anything
+can also have multiple tags for that and they are all usable for whatever reason
+
+i guess it just adds a remote origin ... and u can as many 'origins' as u want u just name them  different things and can push them all the same
+
+git remote add a https://github.com/craftonb/first-rails.git
+git push -u a master
+
+can do this also and still works even after commit with origin
